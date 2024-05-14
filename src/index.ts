@@ -1,7 +1,3 @@
-import { greetUser } from '$utils/greet';
-
-window.Webflow ||= [];
-window.Webflow.push(() => {
-  const name = 'John Doe';
-  greetUser(name);
+Webflow.push(function () {
+  $('[auto-year="true"]').text(new Date().getFullYear());
 });
